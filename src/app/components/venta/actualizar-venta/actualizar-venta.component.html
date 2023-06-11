@@ -1,0 +1,53 @@
+<form [formGroup]="form" novalidate (ngSubmit)="onSubmit()" class="p-3 bg-faded">
+
+    <div class="grid">
+      <div class="col-12 sm:col-6">
+        <div class="p-inputgroup mb-1">
+          <span class="p-inputgroup-addon"><i class="pi pi-calendar"></i></span>
+          <input type="text" pInputText formControlName="fechaVenta" placeholder="fechaVenta" title="fechaVenta">
+        </div>
+      </div>
+  
+      <div class="col-12 sm:col-6">
+        <div class="p-inputgroup mb-1">
+          <span class="p-inputgroup-addon"><i class="pi pi-dollar"></i></span>
+          <input type="text" pInputText formControlName="subtotalVenta" placeholder="subtotalVenta" title="subtotalVenta">
+        </div>
+      </div>
+    </div>
+  
+    <div class="grid">
+      <div class="col-12 sm:col-6">
+        <div class="p-inputgroup mb-1">
+          <span class="p-inputgroup-addon"><i class="pi pi-percentage"></i></span>
+          <input type="text" pInputText formControlName="impuestosVenta" placeholder="impuestosVenta" title="impuestosVenta">
+        </div>
+      </div>
+  
+      <div class="col-12 sm:col-6">
+        <div class="p-inputgroup mb-1">
+          <span class="p-inputgroup-addon"><i class="pi pi-percentage"></i></span>
+          <input type="text" pInputText formControlName="descuentosVenta" placeholder="descuentosVenta" title="descuentosVenta">
+        </div>
+      </div>
+    </div>
+  
+    <div class="grid">
+      <div class="col-12 sm:col-6">
+        <div class="p-inputgroup mb-1">
+          <span class="p-inputgroup-addon"><i class="pi pi-money-bill"></i></span>
+          <input type="text" pInputText formControlName="totalVenta" placeholder="totalVenta" title="totalVenta">
+        </div>
+      </div>
+  
+     <div class="text-right">
+      <div class="col-12 sm:col-6">
+        <button pButton pRipple type="submit" icon="pi pi-check" label="Enviar" [disabled]="!form.valid" class="mt-4 mr-2"></button>
+  
+        <button pButton pRipple  type="button"  icon="pi pi-times" label="Cancelar"
+        class=" mr-2" (click)="cancel()">
+        </button>
+      </div>
+    </div>
+ </div>
+</form>

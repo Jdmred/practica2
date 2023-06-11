@@ -23,8 +23,8 @@ export class HeaderComponent implements OnInit{
       {
         label: 'Coche',
         icon: 'pi pi-car',
-        routerLink: ''
-      }
+        routerLink: '/coches'
+      },
     ]
   }
 }

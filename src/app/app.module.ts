@@ -21,6 +21,11 @@ import { CrearClienteComponent } from './components/cliente/crear-cliente/crear-
 import { ActualizarClienteComponent } from './components/cliente/actualizar-cliente/actualizar-cliente.component';
 import { ToastModule} from 'primeng/toast';
 import { MostrarVentaComponent } from './components/venta/mostrar-venta/mostrar-venta.component';
+import { ActualizarVentaComponent } from './components/venta/actualizar-venta/actualizar-venta.component';
+import { CrearVentaComponent } from './components/venta/crear-venta/crear-venta.component';
+import { MostrarCocheComponent } from './components/coche/mostrar-coche/mostrar-coche.component';
+import { CrearCocheComponent } from './components/coche/crear-coche/crear-coche.component';
+import { ActualizarCocheComponent } from './components/coche/actualizar-coche/actualizar-coche.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +36,11 @@ import { MostrarVentaComponent } from './components/venta/mostrar-venta/mostrar-
     CrearClienteComponent,
     ActualizarClienteComponent,
     MostrarVentaComponent,
+    ActualizarVentaComponent,
+    CrearVentaComponent,
+    MostrarCocheComponent,
+    CrearCocheComponent,
+    ActualizarCocheComponent,
   ],
   imports: [
     BrowserModule,
